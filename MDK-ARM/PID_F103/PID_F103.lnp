@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"pid_f103\startup_stm32f103xb.o"
+"pid_f103\main.o"
+"pid_f103\stm32f1xx_it.o"
+"pid_f103\stm32f1xx_hal_msp.o"
+"pid_f103\pid.o"
+"pid_f103\stm32f1xx_hal_gpio_ex.o"
+"pid_f103\stm32f1xx_hal_tim.o"
+"pid_f103\stm32f1xx_hal_tim_ex.o"
+"pid_f103\stm32f1xx_hal.o"
+"pid_f103\stm32f1xx_hal_rcc.o"
+"pid_f103\stm32f1xx_hal_rcc_ex.o"
+"pid_f103\stm32f1xx_hal_gpio.o"
+"pid_f103\stm32f1xx_hal_dma.o"
+"pid_f103\stm32f1xx_hal_cortex.o"
+"pid_f103\stm32f1xx_hal_pwr.o"
+"pid_f103\stm32f1xx_hal_flash.o"
+"pid_f103\stm32f1xx_hal_flash_ex.o"
+"pid_f103\stm32f1xx_hal_exti.o"
+"pid_f103\system_stm32f1xx.o"
+--strict --scatter "PID_F103\PID_F103.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PID_F103.map" -o PID_F103\PID_F103.axf
